@@ -3,7 +3,6 @@
 A FastAPI-based system for managing restaurant tables and reservations with PostgreSQL.
 
 ## 🌟 Main Components
-
 app/
 ├── database.py          # Database configuration and session management
 ├── dependencies.py      # Dependency injection setup
@@ -29,8 +28,6 @@ app/
 └── services/            # Business logic layer
     ├── reservation.py    # Reservation business logic
     └── table.py         # Table business logic
-
-
 ## 🚀 Quick Start
 
 ### Prerequisites
