@@ -5,30 +5,30 @@ A FastAPI-based system for managing restaurant tables and reservations with Post
 ## 🌟 Main Components
 ```text
 app/
-├── database.py # Database configuration
-├── dependencies.py # Dependency injection
-├── exceptions.py # Custom exceptions
-├── main.py # FastAPI entry point
-├── migrations/ # Alembic migrations
-├── models/ # Database models
-│ ├── base.py # Base model
-│ ├── reservation.py # Reservation model
-│ └── table.py # Table model
-├── repositories/ # Data access
-│ ├── abstract_base.py # Abstract repo
-│ ├── base.py # Base repo
-│ ├── reservation.py # Reservation repo
-│ └── table.py # Table repo
-├── routers/ # API endpoints
-│ ├── reservation.py # Reservation routes
-│ └── table.py # Table routes
-├── schemas/ # Pydantic schemas
-│ ├── base.py # Base schema
-│ ├── reservation.py # Reservation schemas
-│ └── table.py # Table schemas
-└── services/ # Business logic
-├── reservation.py # Reservation services
-└── table.py # Table services
+├── database.py          # Database configuration
+├── dependencies.py     # Dependency injection
+├── exceptions.py       # Custom exceptions
+├── main.py             # FastAPI entry point
+├── migrations/         # Alembic migrations
+├── models/             # Database models
+│   ├── base.py         # Base model
+│   ├── reservation.py  # Reservation model
+│   └── table.py        # Table model
+├── repositories/       # Data access layer
+│   ├── abstract_base.py # Abstract repository
+│   ├── base.py         # Base repository
+│   ├── reservation.py  # Reservation repository
+│   └── table.py        # Table repository
+├── routers/            # API endpoints
+│   ├── reservation.py  # Reservation routes
+│   └── table.py        # Table routes
+├── schemas/            # Pydantic schemas
+│   ├── base.py         # Base schema
+│   ├── reservation.py  # Reservation schemas
+│   └── table.py        # Table schemas
+└── services/           # Business logic
+    ├── reservation.py  # Reservation services
+    └── table.py        # Table services
 ```
 ## 🚀 Quick Start
 
