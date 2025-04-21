@@ -3,31 +3,33 @@
 A FastAPI-based system for managing restaurant tables and reservations with PostgreSQL.
 
 ## 🌟 Main Components
+```text
 app/
-├── database.py # Database configuration and session management
-├── dependencies.py # Dependency injection setup
-├── exceptions.py # Custom exceptions
-├── main.py # FastAPI application entry point
-├── migrations/ # Alembic migration files
-├── models/ # Database models
-│ ├── base.py # Base model with common fields
-│ ├── reservation.py # Reservation model
-│ └── table.py # Table model
-├── repositories/ # Data access layer
-│ ├── abstract_base.py # Abstract base repository
-│ ├── base.py # Base repository implementation
-│ ├── reservation.py # Reservation repository
-│ └── table.py # Table repository
-├── routers/ # API endpoints
-│ ├── reservation.py # Reservation API endpoints
-│ └── table.py # Table API endpoints
-├── schemas/ # Pydantic schemas
-│ ├── base.py # Base Pydantic model
-│ ├── reservation.py # Reservation schemas
-│ └── table.py # Table schemas
-└── services/ # Business logic
-├── reservation.py # Reservation services
-└── table.py # Table services
+├── database.py          # Конфигурация базы данных
+├── dependencies.py      # Инъекция зависимостей
+├── exceptions.py        # Кастомные исключения
+├── main.py              # Точка входа FastAPI
+├── migrations/          # Миграции Alembic
+├── models/              # Модели базы данных
+│   ├── base.py          # Базовая модель
+│   ├── reservation.py   # Модель бронирования
+│   └── table.py         # Модель столика
+├── repositories/        # Доступ к данным
+│   ├── abstract_base.py # Абстрактный репозиторий
+│   ├── base.py          # Базовый репозиторий
+│   ├── reservation.py   # Репозиторий бронирований
+│   └── table.py         # Репозиторий столиков
+├── routers/             # API endpoints
+│   ├── reservation.py   # Роуты бронирований
+│   └── table.py         # Роуты столиков
+├── schemas/             # Pydantic схемы
+│   ├── base.py          # Базовая схема
+│   ├── reservation.py   # Схемы бронирований
+│   └── table.py         # Схемы столиков
+└── services/            # Бизнес-логика
+    ├── reservation.py   # Сервис бронирований
+    └── table.py         # Сервис столиков
+```
 ## 🚀 Quick Start
 
 ### Prerequisites
