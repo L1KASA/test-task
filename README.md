@@ -4,30 +4,30 @@ A FastAPI-based system for managing restaurant tables and reservations with Post
 
 ## 🌟 Main Components
 app/
-├── database.py          # Database configuration and session management
-├── dependencies.py      # Dependency injection setup
-├── exceptions.py        # Custom exceptions
-├── main.py              # FastAPI application entry point
-├── migrations/          # Alembic migration files
-├── models/              # Models for the application
-│   ├── base.py          # Base model with common fields
-│   ├── reservation.py    # Reservation model
-│   └── table.py         # Table model
-├── repositories/        # Data access layer
-│   ├── abstract_base.py  # Abstract base repository
-│   ├── base.py          # Base repository implementation
-│   ├── reservation.py    # Reservation repository
-│   └── table.py         # Table repository
-├── routers/             # API endpoints
-│   ├── reservation.py    # Reservation API endpoints
-│   └── table.py         # Table API endpoints
-├── schemas/             # Pydantic schemas for data validation
-│   ├── base.py          # Base Pydantic model
-│   ├── reservation.py    # Reservation schemas
-│   └── table.py         # Table schemas
-└── services/            # Business logic layer
-    ├── reservation.py    # Reservation business logic
-    └── table.py         # Table business logic
+├── database.py # Database configuration and session management
+├── dependencies.py # Dependency injection setup
+├── exceptions.py # Custom exceptions
+├── main.py # FastAPI application entry point
+├── migrations/ # Alembic migration files
+├── models/ # Database models
+│ ├── base.py # Base model with common fields
+│ ├── reservation.py # Reservation model
+│ └── table.py # Table model
+├── repositories/ # Data access layer
+│ ├── abstract_base.py # Abstract base repository
+│ ├── base.py # Base repository implementation
+│ ├── reservation.py # Reservation repository
+│ └── table.py # Table repository
+├── routers/ # API endpoints
+│ ├── reservation.py # Reservation API endpoints
+│ └── table.py # Table API endpoints
+├── schemas/ # Pydantic schemas
+│ ├── base.py # Base Pydantic model
+│ ├── reservation.py # Reservation schemas
+│ └── table.py # Table schemas
+└── services/ # Business logic
+├── reservation.py # Reservation services
+└── table.py # Table services
 ## 🚀 Quick Start
 
 ### Prerequisites
