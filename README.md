@@ -5,30 +5,30 @@ A FastAPI-based system for managing restaurant tables and reservations with Post
 ## 🌟 Main Components
 ```text
 app/
-├── database.py          # Конфигурация базы данных
-├── dependencies.py      # Инъекция зависимостей
-├── exceptions.py        # Кастомные исключения
-├── main.py              # Точка входа FastAPI
-├── migrations/          # Миграции Alembic
-├── models/              # Модели базы данных
-│   ├── base.py          # Базовая модель
-│   ├── reservation.py   # Модель бронирования
-│   └── table.py         # Модель столика
-├── repositories/        # Доступ к данным
-│   ├── abstract_base.py # Абстрактный репозиторий
-│   ├── base.py          # Базовый репозиторий
-│   ├── reservation.py   # Репозиторий бронирований
-│   └── table.py         # Репозиторий столиков
-├── routers/             # API endpoints
-│   ├── reservation.py   # Роуты бронирований
-│   └── table.py         # Роуты столиков
-├── schemas/             # Pydantic схемы
-│   ├── base.py          # Базовая схема
-│   ├── reservation.py   # Схемы бронирований
-│   └── table.py         # Схемы столиков
-└── services/            # Бизнес-логика
-    ├── reservation.py   # Сервис бронирований
-    └── table.py         # Сервис столиков
+├── database.py # Database configuration
+├── dependencies.py # Dependency injection
+├── exceptions.py # Custom exceptions
+├── main.py # FastAPI entry point
+├── migrations/ # Alembic migrations
+├── models/ # Database models
+│ ├── base.py # Base model
+│ ├── reservation.py # Reservation model
+│ └── table.py # Table model
+├── repositories/ # Data access
+│ ├── abstract_base.py # Abstract repo
+│ ├── base.py # Base repo
+│ ├── reservation.py # Reservation repo
+│ └── table.py # Table repo
+├── routers/ # API endpoints
+│ ├── reservation.py # Reservation routes
+│ └── table.py # Table routes
+├── schemas/ # Pydantic schemas
+│ ├── base.py # Base schema
+│ ├── reservation.py # Reservation schemas
+│ └── table.py # Table schemas
+└── services/ # Business logic
+├── reservation.py # Reservation services
+└── table.py # Table services
 ```
 ## 🚀 Quick Start
 
