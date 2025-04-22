@@ -11,11 +11,14 @@ config = context.config
 import os
 from dotenv import load_dotenv
 
-# Загружаем переменные окружения
 load_dotenv()
 
-# Получаем URL из переменных окружения или используем дефолтный
-db_url = os.getenv("DATABASE_URL", "postgresql://postgres:123123@localhost/fastapi")
+config = context.config
+
+db_url = os.getenv("DATABASE_URL")
+if not db_url:
+    raise ValueError("DATABASE_URL environment variable is not set")
+
 config.set_main_option("sqlalchemy.url", db_url)
 # Interpret the config file for Python logging.
 # This line sets up loggers basically.
