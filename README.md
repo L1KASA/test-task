@@ -44,7 +44,7 @@ app/
 ```bash pip install -r requirements.txt ```
 #### 2. Configure PostgreSQL in .env file:
 ```bash DATABASE_URL=postgresql://<user>:<password>@<host>:<port>/<dbname> ```
-#### Apply migrations:
+#### 3. Apply migrations:
 ```bash alembic upgrade head ```
-#### Start the development server:
+#### 4. Start the development server:
 ```bash uvicorn app.main:app --reload ```
