@@ -42,7 +42,7 @@ app/
 ### Without Docker
 #### 1. Install dependencies:
 ```bash pip install -r requirements.txt ```
-### 2. Configure PostgreSQL in .env file:
+#### 2. Configure PostgreSQL in .env file:
 ```bash DATABASE_URL=postgresql://<user>:<password>@<host>:<port>/<dbname> ```
 #### Apply migrations:
 ```bash alembic upgrade head ```
