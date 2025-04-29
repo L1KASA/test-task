@@ -30,21 +30,21 @@ app/
     ├── reservation.py  # Reservation services
     └── table.py        # Table services
 ```
-## 🚀 Quick Start
+## 🚀 Quick Start (Windows)
 
 ### Prerequisites
 - Docker and Docker Compose
 - Python 3.12 (for local development)
 
 ### With Docker (Recommended)
-```bash docker-compose up --build ```
+```docker-compose up --build```
 
 ### Without Docker
 #### 1. Install dependencies:
-```bash pip install -r requirements.txt ```
-### 2. Configure PostgreSQL in .env file:
-```bash DATABASE_URL=postgresql://<user>:<password>@<host>:<port>/<dbname> ```
-#### Apply migrations:
-```bash alembic upgrade head ```
-#### Start the development server:
-```bash uvicorn app.main:app --reload ```
+```python -m pip install -r requirements.txt```
+#### 2. Configure PostgreSQL in .env file:
+```DATABASE_URL=postgresql://<user>:<password>@<host>:<port>/<dbname>```
+#### 3. Apply migrations:
+```alembic upgrade head```
+#### 4. Start the development server:
+```uvicorn app.main:app --reload```
