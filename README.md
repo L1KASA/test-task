@@ -1,7 +1,7 @@
 # 🍽️ Restaurant Reservation System API
 
 A FastAPI-based system for managing restaurant tables and reservations with PostgreSQL.
-![Image alt]([[https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png](https://github.com/L1KASA/test-task/commit/4c594533569677bd125c22b991f0de3d0f3a49cd)](https://raw.githubusercontent.com/L1KASA/test-task/4c594533569677bd125c22b991f0de3d0f3a49cd/last.jpg))
+![Image alt](https://raw.githubusercontent.com/L1KASA/test-task/4c594533569677bd125c22b991f0de3d0f3a49cd/last.jpg)
 ## 🌟 Main Components
 ```text
 app/
